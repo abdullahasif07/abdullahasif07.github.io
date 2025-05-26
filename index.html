@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - CS Portfolio</title>
+    <title>Muhammad Abdullah - CS Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -80,6 +80,24 @@
             color: white;
         }
 
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            display: block;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease 0.1s both;
+            transition: all 0.3s ease;
+            object-fit: cover;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
@@ -105,23 +123,6 @@
             margin-left: auto;
             margin-right: auto;
             animation: fadeInUp 1s ease 0.4s both;
-        }
-
-        .profile-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin: 0 auto 2rem;
-            display: block;
-            border: 5px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-            animation: fadeInUp 1s ease 0.1s both;
-            transition: all 0.3s ease;
-        }
-
-        .profile-image:hover {
-            transform: scale(1.05);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         }
 
         .cta-buttons {
@@ -389,11 +390,13 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Hello, I'm [Your Name]</h1>
-                <p class="subtitle">Computer Science Student & Future Developer</p>
+                <img src="my-photo.png" alt="Muhammad Abdullah" class="profile-image">
+                <h1>Hello, I'm Muhammad Abdullah</h1>
+                <p class="subtitle">CS Student | AI/ML Researcher | Full-Stack Developer</p>
                 <p class="description">
-                    Passionate about creating innovative solutions through code. Currently pursuing my CS degree 
-                    and exploring the exciting world of software development, algorithms, and emerging technologies.
+                    Passionate about leveraging AI and software engineering to solve real-world problems. 
+                    Currently researching intrusion detection systems, building LLM-powered applications, 
+                    and creating innovative web solutions with modern technologies.
                 </p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
