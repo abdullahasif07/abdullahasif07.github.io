@@ -65,8 +65,8 @@
                             <span class="cursor-blink">|</span>
                         </div>
                         <p class="hero-description">
-                            Building intelligent systems at the intersection of AI and software engineering.
-                            I craft scalable backends, design agentic LLM workflows, and ship products that solve real-world problems.
+                            I build AI agents, RAG pipelines and the backends that run them in production.
+                            Master of Applied Computing (Co-op) student at Wilfrid Laurier University, previously Software Engineer at Devsinc.
                         </p>
                         <div class="cta-buttons">
                             <a href="#projects" class="btn btn-primary">
@@ -98,7 +98,7 @@
                         <div class="image-ring"></div>
                         <img src="my-photo.png" alt="Muhammad Abdullah" class="profile-image">
                         <div class="image-status">
-                            <span class="status-dot"></span> Available for opportunities
+                            <span class="status-dot"></span> Open to co-op opportunities
                         </div>
                     </div>
                 </div>
@@ -122,14 +122,18 @@
                 </div>
                 <div class="about-content">
                     <p>
-                        I'm a <span class="highlight">Software Engineer</span> with a strong foundation in AI/ML and full-stack development.
-                        I specialize in building <span class="highlight">scalable backend systems</span>, designing
-                        <span class="highlight">agentic LLM workflows</span>, and integrating cutting-edge AI into production applications.
+                        I'm a <span class="highlight">Software Engineer</span> currently pursuing a
+                        <span class="highlight">Master of Applied Computing (Co-op)</span> at Wilfrid Laurier University in Waterloo,
+                        after a BS in Computer Science from LUMS and a year as a Software Engineer at Devsinc.
                     </p>
                     <p>
-                        With experience spanning FastAPI, GraphQL, LangGraph, and cloud-native architectures, I thrive at the intersection
-                        of <span class="highlight">intelligent systems</span> and robust software engineering. My work focuses on turning
-                        complex AI research into reliable, high-throughput production services.
+                        I build <span class="highlight">AI agents</span> and the backends behind them: LangGraph and MCP tool-calling agents,
+                        <span class="highlight">RAG pipelines</span>, FastAPI/GraphQL services with Celery workers, and serverless pipelines on
+                        <span class="highlight">AWS</span>. I care about the unglamorous parts that make AI products work in production:
+                        tracing and latency, guardrails, cost caps, tests and CI.
+                    </p>
+                    <p>
+                        I'm looking for <span class="highlight">co-op opportunities</span> in software, backend and AI engineering.
                     </p>
                 </div>
                 <span class="section-tag section-tag-close">&lt;/about&gt;</span>
@@ -148,35 +152,41 @@
                         <div class="timeline-content">
                             <div class="timeline-header-row">
                                 <div>
-                                    <h3>Associate Software Engineer</h3>
+                                    <h3>Software Engineer I</h3>
                                     <span class="company-name">Devsinc</span>
                                 </div>
-                                <span class="timeline-date">Jun 2025 — Present</span>
+                                <span class="timeline-date">Jun 2025 — Jun 2026</span>
                             </div>
                             <ul class="experience-list">
                                 <li>
                                     <span class="exp-bullet">▹</span>
-                                    Built scalable <span class="highlight">FastAPI</span> backends with <span class="highlight">GraphQL</span> and <span class="highlight">Celery</span> for async task orchestration, supporting high-throughput AI workflows.
+                                    Built a conversational <span class="highlight">AI agent</span> with <span class="highlight">LangGraph</span> and <span class="highlight">MCP servers</span> for a US client's pre-launch events platform. It onboards users and registers them for events through multi-step tool calling across <span class="highlight">30+ backend tools</span>.
                                 </li>
                                 <li>
                                     <span class="exp-bullet">▹</span>
-                                    Designed <span class="highlight">agentic workflows</span> using <span class="highlight">LangGraph</span>, enabling multi-step reasoning, tool selection, and autonomous task execution across LLM pipelines.
+                                    Used <span class="highlight">LangSmith</span> to version prompts and trace agent runs, found the slowest tool-call steps, and cut average agent response time from <span class="highlight">~8s to ~3s</span>.
                                 </li>
                                 <li>
                                     <span class="exp-bullet">▹</span>
-                                    Integrated <span class="highlight">Alpha Vantage</span>, <span class="highlight">Google OCR</span>, and <span class="highlight">Twilio</span> to power real-time stock analytics, PDF content highlighting, and agent-driven conversations.
+                                    Shipped <span class="highlight">15+ features</span> by building <span class="highlight">FastAPI</span> and <span class="highlight">GraphQL</span> APIs and <span class="highlight">Celery</span> workers that run AI tasks in the background, keeping the app responsive during long LLM jobs.
                                 </li>
                                 <li>
                                     <span class="exp-bullet">▹</span>
-                                    Implemented LLM <span class="highlight">tool calling</span>, prompt versioning, and model-to-model evaluation, achieving an average test performance score of <span class="highlight">0.90</span> across benchmarks.
+                                    Load-tested the platform with seeded data and <span class="highlight">200 simulated concurrent users</span>, and fixed race conditions before launch. Added unit and API tests and <span class="highlight">GitLab CI</span> that runs tests and linting on every merge request.
+                                </li>
+                                <li>
+                                    <span class="exp-bullet">▹</span>
+                                    Met weekly with client stakeholders to turn feature requests into GitLab issues with acceptance criteria, demoed each sprint's build, and reworked agent flows based on their feedback.
                                 </li>
                             </ul>
                             <div class="experience-tech">
+                                <span class="exp-tech-tag">LangGraph</span>
+                                <span class="exp-tech-tag">MCP</span>
+                                <span class="exp-tech-tag">LangSmith</span>
                                 <span class="exp-tech-tag">FastAPI</span>
                                 <span class="exp-tech-tag">GraphQL</span>
                                 <span class="exp-tech-tag">Celery</span>
-                                <span class="exp-tech-tag">LangGraph</span>
-                                <span class="exp-tech-tag">LLMs</span>
+                                <span class="exp-tech-tag">GitLab CI</span>
                                 <span class="exp-tech-tag">Python</span>
                             </div>
                         </div>
@@ -433,7 +443,7 @@
             "Software Engineer",
             "AI/ML Engineer",
             "Backend Developer",
-            "LLM Pipeline Architect",
+            "AI Agent Builder",
             "Full-Stack Developer"
         ];
         let roleIndex = 0, charIndex = 0, isDeleting = false;
