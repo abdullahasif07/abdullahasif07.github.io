@@ -80,7 +80,7 @@
                         </div>
                         <div class="hero-stats">
                             <div class="stat-item">
-                                <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+                                <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
                                 <span class="stat-label">Projects</span>
                             </div>
                             <div class="stat-divider"></div>
@@ -325,6 +325,79 @@
                     <div class="project-card">
                         <div class="project-card-glow"></div>
                         <div class="project-number">01</div>
+                        <span class="project-badge project-badge-live">Live</span>
+                        <h3>TalentFlow AI — AI-Powered Recruitment Platform</h3>
+                        <p>AI hiring platform that parses resumes, generates rubrics and scores candidates with cited evidence. A retryable Celery pipeline streams live progress, supports candidate comparison and drafts recruiter-approved AI outreach. Public pilot with AI spend caps, rate limits, prompt-injection defences and no-signup demos.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Celery</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Vercel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://talent-flow-ai-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link"><span class="project-link-icon">↗</span> Live Demo</a>
+                            <a href="https://github.com/abdullahasif07/TalentFlow-AI" target="_blank" rel="noopener noreferrer" class="project-link"><span class="project-link-icon">&lt;/&gt;</span> Code</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-number">02</div>
+                        <span class="project-badge project-badge-live">Live</span>
+                        <h3>RoundAbout — Event Discovery Platform</h3>
+                        <p>Aggregates 600 events from 6 sources into one searchable app for students and newcomers in Waterloo Region and the GTA. An EventBridge → Lambda → DynamoDB pipeline refreshes every 3 hours, writes only changes and TTL-expires old events. CDN caching keeps external API calls at ~50 per run regardless of traffic.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS Lambda</span>
+                            <span class="tech-tag">DynamoDB</span>
+                            <span class="tech-tag">EventBridge</span>
+                            <span class="tech-tag">S3</span>
+                            <span class="tech-tag">CloudFront</span>
+                            <span class="tech-tag">SST</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://d1kn68oe2caofa.cloudfront.net/" target="_blank" rel="noopener noreferrer" class="project-link"><span class="project-link-icon">↗</span> Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-number">03</div>
+                        <span class="project-badge project-badge-live">Live</span>
+                        <h3>StockBot — RAG-Powered Financial Assistant</h3>
+                        <p>Full-stack AI financial assistant that orchestrates tool calls to Alpha Vantage and SEC EDGAR, cutting LLM calls per message from up to 5 to 2. Hybrid BM25 + vector RAG over SEC 10-Ks with sub-20 ms retrieval and source-cited answers. Stall timeouts and automatic LLM failover cut reply latency from ~50s to ~3s.</p>
+                        <p class="project-note">Access code: <code>recruit2026</code></p>
+                        <div class="project-tech">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://stockbot.178.105.95.25.sslip.io/" target="_blank" rel="noopener noreferrer" class="project-link"><span class="project-link-icon">↗</span> Live Demo</a>
+                            <a href="https://github.com/abdullahasif07/Stock-Bot" target="_blank" rel="noopener noreferrer" class="project-link"><span class="project-link-icon">&lt;/&gt;</span> Code</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-number">04</div>
+                        <h3>Mailmind — AI Email Agent</h3>
+                        <p>AI Gmail agent that searches, summarizes and replies via OpenAI function calling over 4 MCP tools with multi-turn memory. Emails are sent only after the user approves the exact draft, with least-privilege Google OAuth, encrypted tokens and per-user AI usage caps. Evaluated with 41 pytest cases and a scripted-model test harness, plus a sandboxed demo inbox.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">MCP</span>
+                            <span class="tech-tag">Google OAuth</span>
+                            <span class="tech-tag">pytest</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abdullahasif07/mcp-gmail-assistant" target="_blank" rel="noopener noreferrer" class="project-link"><span class="project-link-icon">&lt;/&gt;</span> Code</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-number">05</div>
+                        <span class="project-badge project-badge-research">Research</span>
                         <h3>PIDDL Systems — Intrusion Detection Research</h3>
                         <p>Reproducing and analyzing provenance-based intrusion detection systems (ATLAS, ShadeWatcher, NodLink). Conducted end-to-end analysis and identified system weaknesses for improved security performance.</p>
                         <div class="project-tech">
@@ -332,10 +405,15 @@
                             <span class="tech-tag">Machine Learning</span>
                             <span class="tech-tag">Security Systems</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abdullahasif07/ATLAS" target="_blank" rel="noopener noreferrer" class="project-link"><span class="project-link-icon">&lt;/&gt;</span> ATLAS</a>
+                            <a href="https://github.com/abdullahasif07/ShadeWatcher" target="_blank" rel="noopener noreferrer" class="project-link"><span class="project-link-icon">&lt;/&gt;</span> ShadeWatcher</a>
+                        </div>
                     </div>
                     <div class="project-card">
                         <div class="project-card-glow"></div>
-                        <div class="project-number">02</div>
+                        <div class="project-number">06</div>
+                        <span class="project-badge project-badge-research">Research</span>
                         <h3>CLARITY — Privacy Policy Compliance Tool</h3>
                         <p>Independent research project using LLMs for GDPR/HIPAA compliance classification. Implements RAG and agentic frameworks to simplify privacy policies with user-friendly interface.</p>
                         <div class="project-tech">
@@ -343,10 +421,13 @@
                             <span class="tech-tag">RAG</span>
                             <span class="tech-tag">NLP</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abdullahasif07/CLARITY---Compliance-and-Legal-Analysis-with-Retrieval-Augmented-Intelligence-for-Transparency" target="_blank" rel="noopener noreferrer" class="project-link"><span class="project-link-icon">&lt;/&gt;</span> Code</a>
+                        </div>
                     </div>
                     <div class="project-card">
                         <div class="project-card-glow"></div>
-                        <div class="project-number">03</div>
+                        <div class="project-number">07</div>
                         <h3>Smart Meet — WebRTC Platform</h3>
                         <p>Real-time communication platform with AI integration. Features include video sharing, interactive whiteboard, ChatGPT integration, and text-to-speech for enhanced accessibility.</p>
                         <div class="project-tech">
@@ -354,10 +435,13 @@
                             <span class="tech-tag">MERN Stack</span>
                             <span class="tech-tag">ChatGPT API</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abdullahasif07/my-smartmeet" target="_blank" rel="noopener noreferrer" class="project-link"><span class="project-link-icon">&lt;/&gt;</span> Code</a>
+                        </div>
                     </div>
                     <div class="project-card">
                         <div class="project-card-glow"></div>
-                        <div class="project-number">04</div>
+                        <div class="project-number">08</div>
                         <h3>Live Auction App</h3>
                         <p>Full-stack auction platform with real-time bidding using WebSockets. Features secure authentication, bid updates, and comprehensive auction management with personalized user profiles.</p>
                         <div class="project-tech">
@@ -365,10 +449,13 @@
                             <span class="tech-tag">Node.js</span>
                             <span class="tech-tag">WebSockets</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abdullahasif07/auction-app" target="_blank" rel="noopener noreferrer" class="project-link"><span class="project-link-icon">&lt;/&gt;</span> Code</a>
+                        </div>
                     </div>
                     <div class="project-card">
                         <div class="project-card-glow"></div>
-                        <div class="project-number">05</div>
+                        <div class="project-number">09</div>
                         <h3>LUMS Student Chatbot</h3>
                         <p>LLM-powered chatbot using RAG for campus queries. Integrated with student handbook and Pinecone for vector search, providing accurate responses to student questions.</p>
                         <div class="project-tech">
@@ -376,16 +463,22 @@
                             <span class="tech-tag">RAG</span>
                             <span class="tech-tag">Pinecone</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abdullahasif07/RAG-based-chatbot" target="_blank" rel="noopener noreferrer" class="project-link"><span class="project-link-icon">&lt;/&gt;</span> Code</a>
+                        </div>
                     </div>
                     <div class="project-card">
                         <div class="project-card-glow"></div>
-                        <div class="project-number">06</div>
+                        <div class="project-number">10</div>
                         <h3>Content Moderation ML Models</h3>
                         <p>Developed toxicity classification models using BERT, LSTM, and Naive Bayes for real-time content filtering. Focused on improving detection accuracy for safe online environments.</p>
                         <div class="project-tech">
                             <span class="tech-tag">BERT</span>
                             <span class="tech-tag">LSTM</span>
                             <span class="tech-tag">NLP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abdullahasif07/Toxic-Comment-Classification" target="_blank" rel="noopener noreferrer" class="project-link"><span class="project-link-icon">&lt;/&gt;</span> Code</a>
                         </div>
                     </div>
                 </div>
